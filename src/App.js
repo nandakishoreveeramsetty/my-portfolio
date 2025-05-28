@@ -33,6 +33,7 @@ import Education from "./components/Education";
 import Certifications from "./components/Certifications";
 import "./App.css";
 import EmploymentHistory from "./components/EmploymentHistory";
+import Footer from "./components/Footer";
 
 function App() {
   useEffect(() => {
@@ -56,6 +57,9 @@ function App() {
       </section>
       <section data-aos="fade-up">
         <Certifications />
+      </section>
+      <section data-aos="fade-up">
+        <Footer />
       </section>
     </div>
   );
