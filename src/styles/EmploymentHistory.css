@@ -1,0 +1,66 @@
+.employment-history-section {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem 3rem;
+    background: #e8f0fe;
+    border-radius: 12px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #1a237e;
+    box-shadow: 0 6px 25px rgba(26, 35, 126, 0.1);
+  }
+  
+  .employment-history-section h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    letter-spacing: 1.2px;
+  }
+  
+  .employment-entry {
+    margin-bottom: 2.5rem;
+    border-left: 4px solid #303f9f;
+    padding-left: 1.5rem;
+  }
+  
+  .employment-entry h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+    font-weight: 700;
+  }
+  
+  .company {
+    font-weight: 600;
+    color: #3f51b5;
+  }
+  
+  .duration {
+    font-style: italic;
+    color: #444;
+    margin-bottom: 1rem;
+  }
+  
+  .project {
+    margin-bottom: 1.8rem;
+  }
+  
+  .project-name {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #283593;
+    margin-bottom: 0.2rem;
+  }
+  
+  .project-period {
+    font-style: italic;
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 0.7rem;
+  }
+  
+  .project ul {
+    list-style: disc inside;
+    color: #333;
+    line-height: 1.5;
+  }
+  
