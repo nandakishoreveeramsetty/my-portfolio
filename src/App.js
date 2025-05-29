@@ -34,6 +34,7 @@ import Certifications from "./components/Certifications";
 import "./App.css";
 import EmploymentHistory from "./components/EmploymentHistory";
 import Footer from "./components/Footer";
+import AwardsRecognitions from "./components/AwardsRecognitions";
 
 function App() {
   useEffect(() => {
@@ -45,6 +46,9 @@ function App() {
       <Header />
       <section data-aos="fade-up">
         <ProfessionalSummary />
+      </section>
+      <section data-aos="fade-up">
+        <AwardsRecognitions />
       </section>
       <section data-aos="fade-up">
         <Skills />
