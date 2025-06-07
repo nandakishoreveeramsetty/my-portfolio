@@ -36,11 +36,35 @@ import EmploymentHistory from "./components/EmploymentHistory";
 import Footer from "./components/Footer";
 import AwardsRecognitions from "./components/AwardsRecognitions";
 import Navbar from "./components/Navbar";
+import LoadingSpinner from "./components/LoadingSpinner";
+import { useState } from "react";
+
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
+    // Simulate data fetching or asset loading
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000); // Adjust time as needed (e.g., 2.5 seconds)
+
+    return () => clearTimeout(timer); // Cleanup timer on unmount
   }, []);
+
+  useEffect(() => {
+    // Initialize AOS only after the main content is loaded
+    if (!isLoading) {
+      AOS.init({
+        duration: 1000,
+        once: true, // Animations happen only once
+      });
+    }
+  }, [isLoading]); // Re-run this effect when isLoading changes
+
+  if (isLoading) {
+    return <LoadingSpinner />;
+  }
 
   return (
     <div className="App">
