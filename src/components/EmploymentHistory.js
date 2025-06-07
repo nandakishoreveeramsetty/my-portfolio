@@ -17,7 +17,7 @@ const employmentData = [
     company: "Capgemini, Bangalore",
     duration: "Apr 2024 - Mar 2025",
     responsibilities: [
-      "Led backend and frontend chatbot development using Dialogflow CX and Playbooks for a Telecom client.",
+      "Worked on Chatbot development using Dialogflow CX and Playbooks for a Telecom client.",
       "Managed GCP IAM, CI/CD, DevOps, and analytics using BigQuery.",
     ]
   },
