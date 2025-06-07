@@ -35,6 +35,7 @@ import "./App.css";
 import EmploymentHistory from "./components/EmploymentHistory";
 import Footer from "./components/Footer";
 import AwardsRecognitions from "./components/AwardsRecognitions";
+import Navbar from "./components/Navbar";
 
 function App() {
   useEffect(() => {
@@ -43,23 +44,26 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
-      <section data-aos="fade-up">
+      <Navbar />
+      <section id="home" data-aos="fade-in">
+        <Header />
+      </section>
+      <section id="professional-summary" data-aos="fade-up">
         <ProfessionalSummary />
       </section>
-      <section data-aos="fade-up">
+      <section id="awards-recognitions" data-aos="fade-up">
         <AwardsRecognitions />
       </section>
-      <section data-aos="fade-up">
+      <section id="skills" data-aos="fade-up">
         <Skills />
       </section>
-      <section data-aos="fade-up">
+      <section id="employment-history" data-aos="fade-up">
         <EmploymentHistory />
       </section>
-      <section data-aos="fade-up">
+      <section id="education" data-aos="fade-up">
         <Education />
       </section>
-      <section data-aos="fade-up">
+      <section id="certifications" data-aos="fade-up">
         <Certifications />
       </section>
       <section data-aos="fade-up">

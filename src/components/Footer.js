@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footer">
       <p>© {new Date().getFullYear()} Nanda Kishore Veeramsetty</p>
       <p>
-       Built rapidly with ❤️ using React and AI (ChatGPT) |{" "}
+       Built rapidly with ❤️ using React and AI Tools for Development |{" "}
         <a
           href="https://github.com/nandakishoreveeramsetty/my-portfolio"
           target="_blank"
