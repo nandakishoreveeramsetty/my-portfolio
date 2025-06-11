@@ -9,15 +9,15 @@
   border-radius: 0 0 30px 30px;
   box-shadow: 0 8px 15px rgba(30, 58, 138, 0.4);
   animation: slideDownFadeIn 0.8s ease forwards;
-  opacity: 0; /* start hidden for animation */
+  opacity: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  gap: 14rem;
-  flex-wrap: wrap; /* allow wrap on smaller screens */
+  gap: 5vw; /* Responsive gap instead of fixed rem */
+  flex-wrap: wrap;
 }
 
 .header-text {
-  flex: 1 1 60%; /* take up 60% width but can shrink */
-  min-width: 250px; /* prevent too small on narrow screens */
+  flex: 1 1 60%;
+  min-width: 250px;
   text-align: left;
 }
 
@@ -58,14 +58,14 @@
 }
 
 .profile-pic {
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 280px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
-  flex-shrink: 0; /* prevent shrinking */
-  margin-left: 40px;
+  flex-shrink: 0;
+  margin-left: 2rem;
 }
 
 .profile-pic:hover {
@@ -83,6 +83,29 @@
   }
 }
 
+/* Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+  .header {
+    gap: 3rem;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .profile-pic {
+    width: 220px;
+    height: 220px;
+    margin-left: 0;
+  }
+}
+
+/* Mobile (less than 768px) */
 @media (max-width: 768px) {
   .header {
     flex-direction: column-reverse;
@@ -96,8 +119,15 @@
   }
 
   .profile-pic {
-    margin-left: 0;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .title {
+    font-size: 1rem;
   }
 }
