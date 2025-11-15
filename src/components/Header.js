@@ -9,7 +9,7 @@ const Header = () => {
         <h3 className="title">CHATBOTS / CCAI / GCP - GEN AI DEVELOPER</h3>
 
         <p className="contact">
-          📍 Bangalore | 📞 +91 9618821719 | 📧{" "}
+          📍 Bangalore | 📧{" "}
           <a href="mailto:nandakishore3393@gmail.com" className="link">
             nandakishore3393@gmail.com
           </a>
